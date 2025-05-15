@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Page title -->
+  <title>Crumbl Cookies | Menu</title>
+  <!-- Google Fonts: Arima font family -->
+  <link href="https://fonts.googleapis.com/css2?family=Arima:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- External CSS stylesheet -->
+  <link rel="stylesheet" href="crumbl.css" />
+</head>
+<body>
+  
+  <!-- Header with website name and navigation links -->
+  <header>
+    <h1>Crumbl Cookies</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About Us</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="order.html">Order</a>
+    </nav>
+  </header>
+
+<!-- Section for Building a Custom Cookie Box Order -->
+<section class="order-section">
+  <h2>Build Your Cookie Box</h2>
+  <p>Customize your perfect cookie order below!</p>
+
+  <!-- Form for Cookie Customization -->
+  <form class="order-form">
+
+    <!-- Block for Customizing Cookie 1 -->
+    <div class="cookie-block">
+      <h3>Cookie 1</h3>
+      
+      <!-- Cookie Type Dropdown -->
+      <label>Type:
+        <select name="cookie1-type">
+          <option>Chocolate Chip</option>
+          <option>Sugar</option>
+          <option>Brownie Batter</option>
+          <option>Lemon Glaze</option>
+        </select>
+      </label>
+
+      <!-- Icing Option Dropdown -->
+      <label>Icing:
+        <select name="cookie1-icing">
+          <option>None</option>
+          <option>Vanilla</option>
+          <option>Chocolate</option>
+          <option>Strawberry</option>
+        </select>
+      </label>
+
+      <!-- Topping Option Dropdown -->
+      <label>Topping:
+        <select name="cookie1-topping">
+          <option>None</option>
+          <option>Sprinkles</option>
+          <option>Mini Chips</option>
+          <option>Crushed Nuts</option>
+        </select>
+      </label>
+
+      <!-- Cookie Quantity Input -->
+      <label>Quantity:
+        <input type="number" name="cookie1-qty" min="1" max="12" value="1">
+      </label>
+    </div>
+
+    <!-- Text Area for Special Instructions -->
+    <label>Special Instructions:
+      <textarea name="instructions" rows="3" placeholder="Any notes for us? (e.g. no nuts)"></textarea>
+    </label>
+
+    <!-- Submit Button for the Order -->
+    <button type="submit">Place Custom Order</button>
+
+    <!-- Note About Form Functionality -->
+    <p class="note">* Online checkout not available yet. This form is for demonstration only.</p>
+  </form>
+</section>
+
+<!-- Footer Section -->
+<footer>
+  &copy; 2025 Crumbl Cookies; Created by Angel Leonor Gala
+</footer>
+
+</body>
+</html>
